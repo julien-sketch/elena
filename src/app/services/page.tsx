@@ -171,7 +171,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <CTASection title="Parlons de votre stratégie patrimoniale" />
+      <CTASection title="Parlons ensemble de vos projets" />
     </>
   );
 }
