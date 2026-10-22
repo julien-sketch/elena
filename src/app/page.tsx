@@ -38,9 +38,9 @@ const expertises = [
   },
   {
     icon: Plane,
-    title: "Financer votre tour du monde",
+    title: "Concrétiser vos projets de vie",
     description:
-      "Transformer un grand projet de vie en plan financier lisible, réaliste et suivi dans le temps."
+      "Préparer vos grands projets de vie : achat immobilier, voyage, études des enfants… et construire ensemble les solutions pour les réaliser."
   },
   {
     icon: ShieldCheck,
@@ -75,11 +75,11 @@ export default function HomePage() {
               Parce que vos projets méritent d&apos;être préparés.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-muted">
-              Je vous accompagne pour faire les bons choix financiers, protéger votre famille et préparer l&apos;avenir avec sérénité.
+              Je vous accompagne pour faire les bons choix, protéger votre famille et préparer l&apos;avenir en toute sérénité.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href={site.calendly} external>
-                Prendre RDV
+                Prendre rendez-vous
               </ButtonLink>
               <ButtonLink href="/services" variant="secondary">
                 Découvrir les services
@@ -110,8 +110,8 @@ export default function HomePage() {
         <div className="container">
           <SectionTitle
             eyebrow="Expertises"
-            title="Chaque étape de votre vie mérite des conseils adaptés."
-            description="Achat immobilier, études des enfants, retraite, épargne ou nouveaux projets : chaque accompagnement est construit autour de ce qui est important pour vous."
+            title="Vous écouter avant de vous conseiller."
+            description="Chaque situation est unique. Avant de parler de solutions, prenons le temps de comprendre vos objectifs, vos projets et ce qui compte vraiment pour vous."
             align="center"
           />
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -133,17 +133,32 @@ export default function HomePage() {
           <div>
             <SectionTitle
               eyebrow="Accompagnement"
-              title="Des conseils clairs pour avancer sereinement."
-              description="Elena Berard accompagne les décisions qui comptent avec une approche claire, structurée et personnalisée."
+              title="À vos côtés pour concrétiser vos projets."
+              description="Je vous accompagne dans les décisions qui comptent avec une approche claire, humaine et personnalisée."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {["Analyse globale", "Pédagogie", "Suivi dans le temps", "Solutions adaptées"].map(
-                (item) => (
-                  <div key={item} className="card-elevated rounded-2xl p-5">
-                    <p className="font-semibold text-navy">{item}</p>
+              {[
+                {
+                  title: "Une écoute attentive",
+                  description:
+                    "Prendre le temps de comprendre votre situation et vos attentes avant de vous proposer des solutions."
+                },
+                {
+                  title: "Des conseils clairs",
+                  description:
+                    "Vous aider à comprendre les possibilités qui s’offrent à vous pour prendre vos décisions en confiance."
+                },
+                {
+                  title: "Un accompagnement dans le temps",
+                  description:
+                    "Être à vos côtés pour faire évoluer vos choix en fonction de votre vie et de vos projets."
+                }
+              ].map((item) => (
+                  <div key={item.title} className="card-elevated rounded-2xl p-5">
+                    <p className="font-semibold text-navy">{item.title}</p>
+                    <p className="mt-2 text-sm leading-6 text-muted">{item.description}</p>
                   </div>
-                )
-              )}
+                ))}
             </div>
             <div className="mt-8">
               <ButtonLink href="/changer-de-carriere" variant="secondary">

@@ -50,7 +50,7 @@ export default function ContactPage() {
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href={site.calendly} external>
-                Prendre RDV
+                Prendre rendez-vous
               </ButtonLink>
               <ButtonLink href={site.phoneHref} variant="secondary">
                 Appeler maintenant

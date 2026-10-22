@@ -8,8 +8,8 @@ type CTASectionProps = {
 };
 
 export function CTASection({
-  title = "Construisons votre avenir financier ensemble",
-  description = "Un premier échange permet de clarifier vos objectifs et d’identifier les leviers patrimoniaux les plus adaptés."
+  title = "Parlons de vos projets",
+  description = "Je prends le temps de comprendre votre situation, vos objectifs et ce qui compte vraiment pour vous."
 }: CTASectionProps) {
   return (
     <section className="relative overflow-hidden bg-navy py-24 text-white">
@@ -26,11 +26,11 @@ export function CTASection({
           <p className="mt-5 max-w-2xl text-base leading-8 text-white/72">{description}</p>
         </div>
         <div className="rounded-[2rem] bg-white/12 p-6 shadow-soft ring-1 ring-white/14 backdrop-blur">
-          <ButtonLink href={site.calendly} external variant="light" className="w-full">
-            Prendre RDV
+          <ButtonLink href={site.calendly} external className="w-full text-white">
+            Prendre rendez-vous
           </ButtonLink>
           <div className="mt-5">
-            <ContactButtons />
+            <ContactButtons variant="dark" />
           </div>
         </div>
       </div>

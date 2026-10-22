@@ -59,7 +59,7 @@ const services = [
     icon: Scale,
     title: "Préparer l'avenir de vos proches",
     description:
-      "Anticiper la transmission de votre patrimoine et organiser votre succession en toute simplicité."
+      "Anticiper la transmission à vos enfants et organiser les choses progressivement, avec des explications claires et des solutions adaptées à votre situation."
   }
 ];
 
@@ -98,7 +98,7 @@ export default function ServicesPage() {
             </p>
             <div className="mt-8">
               <ButtonLink href={site.calendly} external>
-                Prendre RDV
+                Prendre rendez-vous
               </ButtonLink>
             </div>
           </div>

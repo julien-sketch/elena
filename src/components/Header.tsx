@@ -9,7 +9,7 @@ export function Header() {
         <span className="leaf-mark large -left-24 -top-16 hidden rotate-[58deg] opacity-45 lg:block" aria-hidden="true" />
         <Link href="/" className="focus-ring relative rounded-sm pl-12 sm:pl-0">
           <span className="block font-serif text-[2rem] font-semibold leading-none text-navy sm:text-4xl">
-            Elena Berard
+            Elena Bérard
           </span>
           <span className="mt-1 block text-[0.68rem] font-medium uppercase tracking-[0.48em] text-royal sm:text-xs">
             Gestion de patrimoine
@@ -35,7 +35,8 @@ export function Header() {
           className="focus-ring inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-navy px-4 text-sm font-semibold text-white shadow-button transition hover:-translate-y-0.5 hover:bg-royal sm:px-7 sm:text-base"
         >
           <CalendarDays size={16} aria-hidden="true" />
-          <span>Prendre RDV</span>
+          <span className="sm:hidden">Rendez-vous</span>
+          <span className="hidden sm:inline">Prendre rendez-vous</span>
         </a>
       </div>
     </header>

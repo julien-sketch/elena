@@ -1,5 +1,5 @@
 export const site = {
-  name: "Elena Berard",
+  name: "Elena Bérard",
   title: "Conseillère en gestion de patrimoine",
   phone: "06 64 24 62 69",
   phoneHref: "tel:+33664246269",
@@ -17,7 +17,6 @@ export const site = {
 export const navigation = [
   { label: "Accueil", href: "/" },
   { label: "Expertises", href: "/services#expertises" },
-  { label: "Services", href: "/services" },
   { label: "Changer de carrière", href: "/changer-de-carriere" },
   { label: "Contact", href: "/contact" }
 ] as const;
